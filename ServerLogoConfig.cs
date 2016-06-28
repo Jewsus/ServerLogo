@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using Newtonsoft.Json;
 
@@ -6,20 +6,22 @@ namespace ServerLogo
 {
     public class ServerLogoConfigFile
     {
-        public string logo1 = " █░░▒▓▓▒░░░░░▒▓▀▄▀▄▀▄▓▒░░░░░▒▓▓▒░░█ ";
-        public string logo2 = " █                                █ ";
-        public string logo3 = " █              ╔╗   ╔═══╗  ╔═══╗ █ ";
-        public string logo4 = " █              ║║   ║╔═╗║  ║╔═╗║ █ ";
-        public string logo5 = " █ ╔══╗╔═══╗╔══╗║║╔╗ ╚╝╔╝║  ║║║║║ █ ";
-        public string logo6 = " █ ║╔╗║╠══║║║╔═╝║╚╝╝ ╔═╝╔╝  ║║║║║ █ ";
-        public string logo7 = " █ ║╚╝║║║══╣║╚═╗║╔╗╗ ║║╚═╗╔╗║╚═╝║ █ ";
-        public string logo8 = " █ ╚═╗║╚═══╝╚══╝╚╝╚╝ ╚═══╝╚╝╚═══╝ █ ";
-        public string logo9 = " █ ╔═╝║╔╗ ┬ ┬   ╦┌─┐┬ ┬┌─┐┬ ┬┌─┐  █ ";
-        public string logo10 = " █ ╚══╝╠╩╗└┬┘   ║├┤ │││└─┐│ │└─┐  █ ";
-        public string logo11 = " █     ╚═╝ ┴   ╚╝└─┘└┴┘└─┘└─┘└─┘  █ ";
-        public string logo12 = " █                                █ ";
-        public string logo13 = " █░░▒▓▓▒░░░░░▒▓▀▄▀▄▀▄▓▒░░░░░▒▓▓▒░░█ ";
+        public string logo = string.Join(
+            Environment.NewLine,
 
+            " █░░▒▓▓▒░░░░░▒▓▀▄▀▄▀▄▓▒░░░░░▒▓▓▒░░█ ",
+            " █                                █ ",
+            " █              ╔╗   ╔═══╗  ╔═══╗ █ ",
+            " █              ║║   ║╔═╗║  ║╔═╗║ █ ",
+            " █ ╔══╗╔═══╗╔══╗║║╔╗ ╚╝╔╝║  ║║║║║ █ ",
+            " █ ║╔╗║╠══║║║╔═╝║╚╝╝ ╔═╝╔╝  ║║║║║ █ ",
+            " █ ║╚╝║║║══╣║╚═╗║╔╗╗ ║║╚═╗╔╗║╚═╝║ █ ",
+            " █ ╚═╗║╚═══╝╚══╝╚╝╚╝ ╚═══╝╚╝╚═══╝ █ ",
+            " █ ╔═╝║╔╗ ┬ ┬   ╦┌─┐┬ ┬┌─┐┬ ┬┌─┐  █ ",
+            " █ ╚══╝╠╩╗└┬┘   ║├┤ │││└─┐│ │└─┐  █ ",
+            " █     ╚═╝ ┴   ╚╝└─┘└┴┘└─┘└─┘└─┘  █ ",
+            " █                                █ ",
+            " █░░▒▓▓▒░░░░░▒▓▀▄▀▄▀▄▓▒░░░░░▒▓▓▒░░█ ");
 
         public static ServerLogoConfigFile Read(string path)
         {
