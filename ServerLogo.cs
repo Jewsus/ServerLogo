@@ -53,12 +53,18 @@ namespace ServerLogo
         public override void Initialize()
         {
             SetupConfig();
-            PrintIntro();
-
-            ServerApi.Hooks.GameInitialize.Register(this, (init) =>
+            Console.WriteLine();
+            foreach (string line in ServerLogoConfig.logo)
             {
-
-            });
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine(line);
+            }
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write(" Copyright (C) Jewsus, 2016 - ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("http://geck-forums.com");
+            Console.WriteLine("\r\n");
         }
 
         public static void SetupConfig()
@@ -80,25 +86,6 @@ namespace ServerLogo
                 TShock.Log.ConsoleError("ServerLogo Config Exception");
                 TShock.Log.ConsoleError(ex.ToString());
             }
-        }
-
-        protected void PrintIntro()
-        {
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine("\r\n");
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(" Copyright (C) Jewsus, 2016 - ");
-
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("http://geck-forums.com");
-
-            Console.WriteLine("\r\n");
         }
     }
 }
