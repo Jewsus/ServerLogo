@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Terraria;
 using TerrariaApi.Server;
 using System.IO;
@@ -86,67 +86,7 @@ namespace ServerLogo
         {
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo1);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo2);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo3);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo4);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo5);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo6);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo7);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo8);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo9);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo10);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo11);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo12);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(ServerLogoConfig.logo13);
+            Console.Write(ServerLogoConfig.logo);
             Console.ForegroundColor = ConsoleColor.Yellow;
 
             Console.WriteLine("\r\n");
