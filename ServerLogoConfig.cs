@@ -6,8 +6,9 @@ namespace ServerLogo
 {
     public class ServerLogoConfigFile
     {
-        public string logo = string.Join(
-            Environment.NewLine,
+
+        public string[] logo = new[] {
+
 
             " █░░▒▓▓▒░░░░░▒▓▀▄▀▄▀▄▓▒░░░░░▒▓▓▒░░█ ",
             " █                                █ ",
@@ -21,7 +22,7 @@ namespace ServerLogo
             " █ ╚══╝╠╩╗└┬┘   ║├┤ │││└─┐│ │└─┐  █ ",
             " █     ╚═╝ ┴   ╚╝└─┘└┴┘└─┘└─┘└─┘  █ ",
             " █                                █ ",
-            " █░░▒▓▓▒░░░░░▒▓▀▄▀▄▀▄▓▒░░░░░▒▓▓▒░░█ ");
+            " █░░▒▓▓▒░░░░░▒▓▀▄▀▄▀▄▓▒░░░░░▒▓▓▒░░█ " };
 
         public static ServerLogoConfigFile Read(string path)
         {
